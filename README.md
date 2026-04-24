@@ -4,11 +4,6 @@ Expo SDK 54 mobile app for registering a parent's device for Expo push notificat
 
 This app does not send notifications directly in production. It asks for notification permission, gets an `ExponentPushToken[...]`, and sends that token to `notif-app-web`, which stores it in Aiven MySQL and sends notifications through Expo Push Service.
 
-## Repos
-
-- Mobile app: `C:\Users\Nyuu Sutairu IT Dept\Documents\GitHub\notif-app`
-- Web dashboard/API: `C:\Users\Nyuu Sutairu IT Dept\Documents\GitHub\notif-app-web`
-
 ## Install
 
 ```bash
