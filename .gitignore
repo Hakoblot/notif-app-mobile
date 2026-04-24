@@ -31,6 +31,7 @@ yarn-error.*
 *.pem
 firebase-adminsdk-*.json
 *-firebase-adminsdk-*.json
+google-services.json
 
 # local env files
 .env
