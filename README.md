@@ -10,32 +10,6 @@ This app does not send notifications directly in production. It asks for notific
 npm install
 ```
 
-## Mobile Environment
-
-Create `.env.local` for local development:
-
-```env
-EXPO_PUBLIC_API_URL=http://192.168.1.12:3001
-```
-
-Use your computer's LAN IP when testing from a physical phone. `localhost` on the phone points to the phone, not your laptop.
-
-For EAS preview builds, set the same value in `eas.json`:
-
-```json
-"preview": {
-  "distribution": "internal",
-  "env": {
-    "EXPO_PUBLIC_API_URL": "https://your-render-url.onrender.com"
-  },
-  "android": {
-    "buildType": "apk"
-  }
-}
-```
-
-Only put public values in `EXPO_PUBLIC_*`. Do not put database passwords, Firebase service account keys, or Expo access tokens in the mobile app.
-
 ## Android Push Setup
 
 Android push notifications use FCM under the hood, even when the app and backend use Expo Push Service. This project does not use the Firebase JS SDK or `@react-native-firebase/*`.
